@@ -1,3 +1,9 @@
-h1{
-  color: rgb(20, 44, 88);
+*{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgb(34, 81, 169);
 }
+img{
+  width: 100px;
+  height: 100px;
+}
+ 

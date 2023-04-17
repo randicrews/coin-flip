@@ -12,14 +12,11 @@ function makeReq(){
         // Success!
         var data = JSON.parse(request.responseText);
         console.log(data)
-        // let urScore = 0
-        // let cScore = 0
-        // document.getElementById("player").innerText = urScore
-        // document.getElementById("coinGods").innerText = cScore
-        // urScore += data.yourPoints
-        // cScore += data.coinPoints
+        document.getElementById("player").innerText = +document.getElementById("player").innerText + data.yourPoints
+        document.getElementById("coinGods").innerText = +document.getElementById("coinGods").innerText + data.coinPoints
         document.getElementById("result").innerText = data.result
         document.getElementById("announce").innerText = data.win
+        document.querySelector('img').src = `css/${data.result}.jpeg`
       } else {
         // We reached our target server, but it returned an error
       }
